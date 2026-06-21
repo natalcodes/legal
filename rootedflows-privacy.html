@@ -33,7 +33,7 @@
 <p>Rooted Flows is operated by Nhung Nguyen, based in California, USA. For any privacy question or request, contact us at <a href="mailto:support@rootedflows.com">support@rootedflows.com</a>.</p>
 
 <h2>2. What we collect and why</h2>
-<p>We only collect what the app needs to work for you. We do not buy data about you, and we do not run advertising or third-party tracking.</p>
+<p>We collect what the app needs to work for you, plus limited app-usage analytics that help us improve it (described below). We do not buy data about you, we do not run advertising, we do not sell your data, and we do not track you across other companies' apps and websites.</p>
 <ul>
   <li><strong>Account information</strong> — your email address, used to create and sign in to your account. Authentication is handled by Supabase.</li>
   <li><strong>Cycle and wellness entries you choose to log</strong> — period and cycle dates, flow intensity, cycle and period length, symptoms, mood, and any notes you write. We use these to show you where you are in your cycle or season and to personalize the recipes and practices we suggest.</li>
@@ -41,9 +41,10 @@
   <li><strong>Onboarding answers</strong> — the responses you give when setting up the app, used to set your starting profile.</li>
   <li><strong>Subscription status</strong> — whether you have an active Premium subscription. Purchases are made through Apple's App Store; we use RevenueCat to manage subscription status. We never receive or store your payment-card details — Apple handles payment.</li>
   <li><strong>Ingredient scanner</strong> — when you scan a product barcode, that barcode is sent to the Open Food Facts and Open Beauty Facts databases to look up product and ingredient information. We don't attach your identity to those lookups.</li>
-  <li><strong>Basic technical data</strong> — limited information needed to operate the app reliably (for example, secure connections to our servers). We do not use third-party analytics or advertising SDKs.</li>
+  <li><strong>Basic technical data</strong> — limited information needed to operate the app reliably (for example, secure connections to our servers).</li>
+  <li><strong>Usage and product analytics</strong> — to understand how the app is used and where we can improve it (for example, which onboarding steps people complete and which features get used), we use Mixpanel. It records in-app usage events and an identifier tied to your app installation, and we use it for analytics only — never advertising. We do <em>not</em> feed your cycle entries, symptoms, mood, notes, or other health details into this tool.</li>
 </ul>
-<p><strong>What we do <em>not</em> collect:</strong> we do not connect to Apple HealthKit, we do not use advertising identifiers, and we do not include third-party trackers in the app.</p>
+<p><strong>What we do <em>not</em> collect:</strong> we do not connect to Apple HealthKit, we do not use advertising identifiers, and we do not use your data for advertising or sell it. The analytics described above are used only to operate and improve the app.</p>
 
 <h2>3. How your data is stored and protected</h2>
 <p>Your account and entries are stored with Supabase, our hosting and database provider, on servers located in the United States (Northern California). Data is encrypted in transit. Access is restricted by row-level security so that your entries are accessible only to your account.</p>
@@ -54,6 +55,7 @@
   <li><strong>Supabase</strong> — secure hosting, authentication, and database storage.</li>
   <li><strong>Apple</strong> — processes your subscription purchase and payment.</li>
   <li><strong>RevenueCat</strong> — manages your subscription status (using an anonymous identifier).</li>
+  <li><strong>Mixpanel</strong> — product analytics; records in-app usage events to help us improve the app (no health details).</li>
   <li><strong>Open Food Facts / Open Beauty Facts</strong> — receive scanned barcodes to return product information (data licensed under the Open Database License).</li>
 </ul>
 <p>We do <strong>not</strong> sell your personal or health data, and we do not share it for advertising. We may disclose data if required by law or to protect the safety and rights of our users.</p>
